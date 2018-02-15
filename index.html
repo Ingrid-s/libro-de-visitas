@@ -52,16 +52,18 @@
       </form>
 
           <div class="row comentario">
-            <textarea class="col-xl-12" cols="30" rows="10" placeholder="Escribe aqui tu comentario" onkeyup="text"></textarea>
+            <textarea class="col-xl-12" id="areaText" cols="30" rows="10" placeholder="Escribe aqui tu comentario" onkeyup="text"></textarea>
           </div>
 
           <div class="row previewh">
             <div clas="col-xl-12">
               <h3 class=""> Así se vería tu comentario</h3>
-              <p class="border border-secondary">
-                <hr>
+
+              <p class="border border-secondary" id="text-real-time">
+                <img src="" alt="" id="imager">
+
               </p>
-              <input type="submit" id="send" value="Enviar" >
+              <input type="submit" id="sending" value="Enviar" >
             </div>
           </div>
 
