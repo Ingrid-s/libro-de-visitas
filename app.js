@@ -13,14 +13,67 @@ var centreAlign= document.getElementById("centre");
 var rigthAlign= document.getElementById("rigth");
 
 //asignando eventos
-textRealTime.addEventListener("keyup",perritos);
-textingArea.addEventListener("click", perritos);
-sendText.addEventListener("click", perritos);
-largeSize.addEventListener("click", perritos);
-midSize.addEventListener("click", perritos);
-smallSize.addEventListener("click", perritos);
-colorText.addEventListener("click", perritos);
-backgroundColor.addEventListener("click", perritos);
-leftAlign.addEventListener("click",perritos);
+textingArea.addEventListener("keyup",preView);
+colorText.addEventListener("click", colorFont);
+backgroundColor.addEventListener("click", colorBackground);
+largeSize.addEventListener("click", largeFont);
+midSize.addEventListener("click", mediumFont);
+smallSize.addEventListener("click", smallFont);
+leftAlign.addEventListener("click",alignLeft);
+sendText.addEventListener("click", print);
+/*//textRealTime.addEventListener("click", );
+
+
 centreAlign.addEventListener("click", perritos);
-rigthAlign.addEventListener("click", perritos);
+rigthAlign.addEventListener("click", perritos);*/
+
+//funciones
+
+function preView(){
+  textRealTime.textContent=textingArea.value;
+};
+
+function colorFont(){
+  var color= prompt("Elige un color");
+  textRealTime.style.color=color;
+};
+
+function colorBackground(){
+  var color= prompt("Elige un color de fondo");
+  textRealTime.style.backgroundColor=color;
+};
+
+function largeFont(){
+ textRealTime.style.fontSize="4rem";
+};
+
+function mediumFont(){
+ textRealTime.style.fontSize="2rem";
+};
+
+function smallFont(){
+ textRealTime.style.fontSize="1rem";
+};
+
+function alignLeft(){
+ textRealTime.style.textAlign="left";
+};
+
+//TIENES FOTO DE LA DATA, CRÉALA en otro archivo a partir de aquí
+
+
+
+//función para jalar data.
+function pastComments () {
+  //console.log(VARIALBLE QUE CONTIENE A LA DATA)
+  for (var i=0; i<data.length; i++){
+    var
+  }
+
+pastComments();
+
+
+
+function print(){
+  textRealTime.
+}
